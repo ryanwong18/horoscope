@@ -5,122 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Horoscope Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Khand:400,500,600,700" rel="stylesheet">
+    <link type="image/png" href="images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1>Personal Horoscope Generator</h1>
+            <h1>What do the stars have in store for you?</h1>
         </div>
     </header>
 
     <main>
-        <div class="wrapper">
-            <form action="">
-                <div class="basic-info">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+        <section>
+            <div class="wrapper">
+                <h2>Find out your fate</h2>
+                <form action="">
+                    <div class="basic-info">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label for="bday">Birthday</label>
+                            <input type="date" id="bday" required>
+                        </div>
+                    </div>
+                    <div class="industry-question">
+                        <div class="industry-image">
+                            <img src="images/industry.jpg" alt="icon of industry">
+                        </div>
+                        <div class="question-and-answer">
+                            <div>
+                                <h3>What industry do you work in?</h3>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" value="arts" id="arts">  
+                                <label for="arts">Arts</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="science" value="science">
+                                <label for="science">Sciences</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="education" value="education">
+                                <label for="education">Education</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="sports" value="sports">
+                                <label for="sports">Sports</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="business" value="business">
+                                <label for="business">Business</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="computer" value="computer">
+                                <label for="computer">Computer</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="job" id="illegal" value="illegal">
+                                <label for="illegal">Illegal</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-question">
+                        <label for="">How often do you exercise?</label>
+    
+                        <label for="daily">Everyday</label>
+                        <input type="radio" name="exercise" value="daily" id="daily">
+    
+                        <label for="weekly">Once a week</label>
+                        <input type="radio" name="exercise" value="weekly" id="weekly">
+    
+                        <label for="monthly">Once a month</label>
+                        <input type="radio" name="exercise" value="monthly" id="monthly">
+    
+                        <label for="yearly">Once a year</label>
+                        <input type="radio" name="exercise" value="yearly" id="yearly">
+    
+                        <label for="never">Never seen a gym before</label>
+                        <input type="radio" name="exercise" value="never" id="never">
+                    </div>
+                    <div class="love-question">
+                        <label for="">Which option describes the amount of love in your life?</label>
                     
-                    <label for="bday">Birthday</label>
-                    <input type="date" id="bday" required>
-                </div>
-                <div class="exercise-current">
-                    
-                </div>
-                <!-- <div class="occupation-current">
-                    <label for="industry">What industry do you work in?</label>            
-                    <label for="technology">Technology</label>
-                    <input type="radio" id="technology" name="occupation" value="technology">
-            
-                    <label for="medicine">Medicine</label>
-                    <input type="radio" id="medicine" name="occupation" value="medicine">
-            
-                    <label for="retail">Retail</label>
-                    <input type="radio" id="retail" name="occupation" value="retail">
-            
-                    <label for="food">Food</label>
-                    <input type="radio" id="food" name="occupation" value="food">
-            
-                    <label for="transportation">Transportation</label>
-                    <input type="radio" id="transportation" name="occupation" value="transportation">
-            
-                    <label for="commodities">Commodities</label>
-                    <input type="radio" id="commodities" name="occupation" value="commodities">
-            
-                    <label for="education">Education</label>
-                    <input type="radio" id="education" name="occupation" value="education">
-            
-                    <label for="banking">Banking</label>
-                    <input type="radio" id="banking" name="occupation" value="banking">
-                </div>
-                <div class="occupation-goals">
-                    <label for="industry">What industry do you want to work in?</label>
-                    <label for="technology">Technology</label>
-                    <input type="radio" id="technology" name="occupation" value="technology">
-                    
-                    <label for="medicine">Medicine</label>
-                    <input type="radio" id="medicine" name="occupation" value="medicine">
-                    
-                    <label for="retail">Retail</label>
-                    <input type="radio" id="retail" name="occupation" value="retail">
-                    
-                    <label for="food">Food</label>
-                    <input type="radio" id="food" name="occupation" value="food">
-                    
-                    <label for="transportation">Transportation</label>
-                    <input type="radio" id="transportation" name="occupation" value="transportation">
-                    
-                    <label for="commodities">Commodities</label>
-                    <input type="radio" id="commodities" name="occupation" value="commodities">
-                    
-                    <label for="education">Education</label>
-                    <input type="radio" id="education" name="occupation" value="education">
-                    
-                    <label for="banking">Banking</label>
-                    <input type="radio" id="banking" name="occupation" value="banking">
-                </div> -->
-
-                <input type="submit" value="submit">
-                
-            </form>
-            <div class="zodiac-commentary">
-                <div class="zodiac-image-off aquarius">
-                    <img src="images/aquarius.jpg" alt="symbol of aquarius zodiac">
-                </div>
-                <div class="zodiac-image-off aries">
-                    <img src="images/aries.jpg" alt="symbol of aries zodiac">
-                </div>
-                <div class="zodiac-image-off cancer">
-                    <img src="images/cancer.jpg" alt="symbol of cancer zodiac">
-                </div>
-                <div class="zodiac-image-off capricon">
-                    <img src="images/capricorn.jpg" alt="symbol of capricorn zodiac">
-                </div>
-                <div class="zodiac-image-off gemini">
-                    <img src="images/gemini.jpg" alt="symbol of gemini zodiac">
-                </div>
-                <div class="zodiac-image-off leo">
-                    <img src="images/leo.jpg" alt="symbol of leo zodiac">
-                </div>
-                <div class="zodiac-image-off libra">
-                    <img src="images/libra.jpg" alt="symbol of libra zodiac">
-                </div>
-                <div class="zodiac-image-off pisces">
-                    <img src="images/pisces.jpg" alt="symbol of pisces zodiac">
-                </div>
-                <div class="zodiac-image-off sagittarius">
-                    <img src="images/sagittarius.jpg" alt="symbol of sagittarius zodiac">
-                </div>
-                <div class="zodiac-image-off scorpio">
-                    <img src="images/scorpio.jpg" alt="symbol of scorpio zodiac">
-                </div>
-                <div class="zodiac-image-off taurus">
-                    <img src="images/taurus.jpg" alt="symbol of taurus zodiac">
-                </div>
-                <div class="zodiac-image-off virgo">
-                    <img src="images/virgo.jpg" alt="symbol of virgo zodiac">
-                </div>
+                        <label for="doug">As much as Doug the Pug gets</label>
+                        <input type="radio" name="love" value="doug" id="doug">
+    
+                        <label for="married">Married life - nuff said</label>
+                        <input type="radio" name="love" value="married" id="married">
+    
+                        <label for="parents">As much as my parents give me</label>
+                        <input type="radio" name="love" value="parents" id="parents">
+    
+                        <label for="relationship">Just started a relationship</label>
+                        <input type="radio" name="love" value="relationship" id="relationship">
+    
+                        <label for="single">Single and ready to mingle</label>
+                        <input type="radio" name="love" value="single" id="single">
+    
+                        <label for="alone">Forever alone</label>
+                        <input type="radio" name="love" value="alone" id="alone">
+    
+                    </div>
+    
+                    <input type="submit" value="submit">
+                </form>
             </div>
-        </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="zodiac-commentary">
+                    <div class="zodiac-image-off aquarius">
+                        <img src="images/aquarius.jpg" alt="symbol of aquarius zodiac">
+                    </div>
+                    <div class="zodiac-image-off aries">
+                        <img src="images/aries.jpg" alt="symbol of aries zodiac">
+                    </div>
+                    <div class="zodiac-image-off cancer">
+                        <img src="images/cancer.jpg" alt="symbol of cancer zodiac">
+                    </div>
+                    <div class="zodiac-image-off capricon">
+                        <img src="images/capricorn.jpg" alt="symbol of capricorn zodiac">
+                    </div>
+                    <div class="zodiac-image-off gemini">
+                        <img src="images/gemini.jpg" alt="symbol of gemini zodiac">
+                    </div>
+                    <div class="zodiac-image-off leo">
+                        <img src="images/leo.jpg" alt="symbol of leo zodiac">
+                    </div>
+                    <div class="zodiac-image-off libra">
+                        <img src="images/libra.jpg" alt="symbol of libra zodiac">
+                    </div>
+                    <div class="zodiac-image-off pisces">
+                        <img src="images/pisces.jpg" alt="symbol of pisces zodiac">
+                    </div>
+                    <div class="zodiac-image-off sagittarius">
+                        <img src="images/sagittarius.jpg" alt="symbol of sagittarius zodiac">
+                    </div>
+                    <div class="zodiac-image-off scorpio">
+                        <img src="images/scorpio.jpg" alt="symbol of scorpio zodiac">
+                    </div>
+                    <div class="zodiac-image-off taurus">
+                        <img src="images/taurus.jpg" alt="symbol of taurus zodiac">
+                    </div>
+                    <div class="zodiac-image-off virgo">
+                        <img src="images/virgo.jpg" alt="symbol of virgo zodiac">
+                    </div>
+                </div>   
+            </div>
+        </section>
     </main>
 
     <footer>
