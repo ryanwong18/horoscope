@@ -28,17 +28,18 @@ header {
         align-items: center;
     }
     a {
-        padding:15px 30px;
+        padding:15px 25px;
         text-decoration:none;
         color:black;
         background-color:white;
         text-transform: uppercase;
         font-size:2rem;
-        letter-spacing:0.3rem;
+        letter-spacing:0.2rem;
         text-align: center;
-        width:300px;
         margin-top:200px;
         font-weight:600;
+        border-radius:10px;
+        box-shadow:0 0 5px black;
     }
 }
 
@@ -61,7 +62,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing:0.5rem;
     margin-top:0;
-    margin-bottom:100px;
+    margin-bottom:50px;
     text-align: center;
 }
 
@@ -80,17 +81,19 @@ h2 {
 
 form {
     .basic-info {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:100px;
         label {
             font-size:2rem;
             padding:15px;
             font-weight:500;
         }
-        display:flex;
-        justify-content: center;
-        margin-bottom:100px;
         input {
             font-size:1.8rem;
             width:300px;
+            padding:5px 10px;
         }
     }
     .industry-question {
@@ -181,25 +184,46 @@ form {
             font-weight:600;
             padding:10px 20px;
             letter-spacing:0.2rem;
+            background-color:lightgrey;
+            border:1px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 0 5px black;
         }
     }   
-    .javascript-section {
-        margin-top:100px;
-        height:500px;
-        h3 {
-            font-size:3rem;
-            font-weight:500;
-            letter-spacing:0.5px;
-        }
-        span {
-            text-transform: uppercase;
-            color:red;
-            font-size:3.5rem;
-        }
-        p {
-            font-size:2rem;
-            letter-spacing:0.3px;
-            font-weight:500;
-        }
+}
+.javascript-section {
+    margin-top:100px;
+    height:500px;
+    h3 {
+        font-size:3rem;
+        font-weight:500;
+        letter-spacing:0.5px;
+    }
+    span {
+        text-transform: uppercase;
+        color:red;
+        font-size:3.5rem;
+    }
+    p {
+        font-size:2rem;
+        letter-spacing:0.3px;
+        font-weight:500;
+    }
+}
+.reset-button {
+    display:flex;
+    justify-content: center;
+    margin-bottom:100px;
+    a {
+        text-decoration:none;
+        font-size:2rem;
+        text-transform: uppercase;
+        font-weight:600;
+        padding:10px 20px;
+        letter-spacing:0.2rem;
+        color:black;
+        background-color:lightgrey;
+        border-radius:10px;
+        box-shadow: 0 0 5px black;
     }
 }

@@ -7,7 +7,7 @@ const zodiac = [
         month2:"04",
         day2:"20",
         // date:["03-20", "04-20  "],
-        description: "According to our trusty source, Wikipedia, Aries is the first astrological sign in the zodiac and you exhibit characteristics of a dumpster fire with moonshine poured on it - enthusiasm, fierce, frank and enthusiastic. Not sure why they decided on a ram for your symbol, but hey, I didn't make the rules. Some famous people who are also Aries include Emma Watson, Lady Gaga, Christopher Walken, Robert Downey Jr, Russell Crowe and Steven Seagal. Is it getting a bit hot in here or is just me?",
+        description: "According to our trusty source, Wikipedia, Aries is the first astrological sign in the zodiac and you exhibit characteristics of a dumpster fire with moonshine poured on it - enthusiasm, fierce, frank and enthusiastic. Not sure why they decided on a ram for your symbol, but hey, I didn't make the rules. Some famous people who are also Aries include Emma Watson, Lady Gaga, Christopher Walken, Robert Downey Jr, Russell Crowe and Steven Seagal. Is it getting a bit hot in here or is it just me?",
         initialScore:10
     },
     {
@@ -17,7 +17,7 @@ const zodiac = [
         month2:"05",
         day2:"21",
         // date:["04-21", "05=21"],
-        description: "According to our trusty source, Wikipedia, Taurus is the second astrological sign in the zodiac and apparently you are very reliable, practical, ambitious and down to earth. However, you can be very lazy, materialistic and frugal. I also heard from the grapevine that you tend to snore and scratch yourself when you're sleeping?!?! You're in good company with Dwayne 'The Rock' Johnson, Adele, Janet Jackson, George Clooney, David Beckham and the one and only HOMER SIMPSON.",
+        description: "According to our trusty source, Wikipedia, Taurus is the second astrological sign in the zodiac and apparently you are very reliable, practical, ambitious and down to earth. However, you can be very lazy, materialistic and frugal. I also heard from the grapevine that you tend to snore and scratch yourself when you're sleeping?!?! On the bright side, you're in good company with Dwayne 'The Rock' Johnson, Adele, Janet Jackson, George Clooney, David Beckham and the one and only HOMER SIMPSON.",
         initialScore:9
     },
     {
@@ -206,27 +206,27 @@ const love = [
 const totalScoreCommentary = [
     {
         points: [0, 1, 2, 3, 4 , 5],
-        conclusion:"Oh geez, where do we start with you? You are probably far away from where you want to be, but not to worry. We provide free consultations and life advice. Please call us at 1-800-MY-STARS or you can reach us at horoscopes@horoscope.com"
+        conclusion:"Oh geez, where do we start with you? You are probably far away from where you want to be, but not to worry. We provide consultations and life advice for a price of only $300/month. Please call us at 1-800-MY-STARS or you can reach us at horoscopes@horoscope.com and we'll give you a discount."
     },
     {
         points: [6, 7, 8, 9, 10],
-        conclusion: ""
+        conclusion: "Life may be a struggle, but there's nowhere for you to go but up from here. There are aspects of your life that may need improvement, but with some committment, determination and effort, the stars point to better times ahead."
     },
     {
         points: [11, 12, 13, 14, 15],
-        conclusion: ""
+        conclusion: "You're fairing well, but you may be aspiring to kick it up a notch. The stars are in your favor, but you'll need to take action to reap the benefits. The back half of the year may be tough, but it will pass and you'll learn to endure the hardship."
     },  
     {
         points: [16, 17, 18, 19, 20],
-        conclusion: ""
+        conclusion: "Your life is on track and you're probably quite happy with where things are at. You may see no reason to change, but if you're looking to improve your situation, consider additional exercise and maybe some meditation. You're working hard towards your goals, but remember to take care of yourself."
     },
     {
         points: [21, 22, 23, 24, 25],
-        conclusion: "You are an extremely high achiever. The stars shine bright for you and will guide the way towards an ascending path. "
+        conclusion: "You are a high achiever. The stars shine bright for you and will guide the way towards an ascending path. Your health, career and relationships are all on track and you are probably the envy of many others."
     },
     {
         points: [26, 27, 28, 29, 30, 31, 32, 33],
-        conclusion: "You are a TOTAL boss and you are wasting time on this website. Immediately hit CTRL + W on your windows keyboard or COMMAND + W on your mac. Go out there and do your thing!"
+        conclusion: "You are a TOTAL boss and you are wasting time on this website. Immediately hit CTRL + W on your windows keyboard or COMMAND + W on your mac to exit this tab - Get out there and do your thing!"
     },
 ]
 
@@ -241,6 +241,18 @@ let industrySelection;
 $(function() {
     $(".wrapper a").smoothScroll({
         speed:800
+    });
+
+    $(".reset-button a").on("click", function() {
+        $("html").animate({scrollTop:0}, "slow");
+
+        //clears the name and birthday inputs
+        $("input[type=text]").val("");
+        $("input[type=date]").val("");
+
+        $("input[type=radio]").prop("checked", false);
+
+        $(".javascript-section").empty();
     });
 
     $("form").on("submit", function(e) {
@@ -267,7 +279,7 @@ $(function() {
                 console.log(zodiacIndexNum);
                 console.log(zodiacInitialScore);
             }
-            if(inputUpdateMonth === zodiac[i].month2 && (inputUpdateDay <= zodiac[i].day2)) {
+            else if(inputUpdateMonth === zodiac[i].month2 && (inputUpdateDay <= zodiac[i].day2)) {
                 zodiacIndexNum = zodiac.indexOf(zodiac[i]);
                 finalZodiac = zodiac[i].name;
                 finalDescription = zodiac[i].description;
@@ -280,10 +292,7 @@ $(function() {
         
         //commentary output from name and birthday input
         $(".javascript-section").append(`<h3>Hey <span>${inputName}</span>, your zodiac sign is <span> ${finalZodiac} </span> <p>${finalDescription}</p>`);
-        
-        //clears the name and birthday inputs
-        $("input[type=text]").val("");
-        $("input[type=date]").val("");
+    
         
         //INDUSTRY QUESTION SECTION
         let industryScore;
