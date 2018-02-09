@@ -77,7 +77,7 @@ const zodiac = [
         month2:"11",
         day2:"22",
         // date:["10-24", "11-22"],
-        description: "According to our trusty source, Wikipedia, Scorpio is the eigth astrological sign in the zodiac. They are resourceful, brave and passionate people - if you're in a full on fist fight, you should call one up. They are also determined and decisive - so if you have multiple options for lunch and you're flip flopping, call one up. You share the same sign at Ryan Reynolds, Katy Perry, Julia Roberts, Ryan Gosling, Anne Hathaway and our very own Drake from the 6ix.",
+        description: "According to our trusty source, Wikipedia, Scorpio is the eigth astrological sign in the zodiac. They are resourceful, brave and passionate people - if you're in a full on fist fight, you should call one up. They are also determined and decisive - so if you have multiple options for lunch and you're flip flopping, call one up. You share the same sign as Ryan Reynolds, Katy Perry, Julia Roberts, Ryan Gosling, Anne Hathaway and our very own Drake from the 6ix.",
         initialScore:11
     },
     {
@@ -206,7 +206,7 @@ const love = [
 const totalScoreCommentary = [
     {
         points: [0, 1, 2, 3, 4 , 5],
-        conclusion:"Oh geez, where do we start with you? There are many flaws in your life that you need to fix. Take it one step at a time and maybe you'll get there."
+        conclusion:"Oh geez, where do we start with you? You are probably far away from where you want to be, but not to worry. We provide free consultations and life advice. Please call us at 1-800-MY-STARS or you can reach us at horoscopes@horoscope.com"
     },
     {
         points: [6, 7, 8, 9, 10],
@@ -222,11 +222,11 @@ const totalScoreCommentary = [
     },
     {
         points: [21, 22, 23, 24, 25],
-        conclusion: ""
+        conclusion: "You are an extremely high achiever. The stars shine bright for you and will guide the way towards an ascending path. "
     },
     {
         points: [26, 27, 28, 29, 30, 31, 32, 33],
-        conclusion: "Why are you wasting time on this website? You are already a total boss! Get out there and do your thing"
+        conclusion: "You are a TOTAL boss and you are wasting time on this website. Immediately hit CTRL + W on your windows keyboard or COMMAND + W on your mac. Go out there and do your thing!"
     },
 ]
 
@@ -239,6 +239,10 @@ let industrySelection;
 
 // On function
 $(function() {
+    $(".wrapper a").smoothScroll({
+        speed:800
+    });
+
     $("form").on("submit", function(e) {
         e.preventDefault();
 
@@ -275,17 +279,12 @@ $(function() {
         }
         
         //commentary output from name and birthday input
-        $(".zodiac-commentary").append(`<h3>Hey ${inputName}, your zodiac sign is ${finalZodiac}. I know, cool story bruh - you probably have no idea what that means and probably don't care, but let me tell you anyway.</h3>`).append(`<h3>${finalDescription}</h3>`);
+        $(".javascript-section").append(`<h3>Hey <span>${inputName}</span>, your zodiac sign is <span> ${finalZodiac} </span> <p>${finalDescription}</p>`);
         
         //clears the name and birthday inputs
         $("input[type=text]").val("");
         $("input[type=date]").val("");
         
-        //displays image of corresponding zodiac sign
-        let zodiacImage = $(".zodiac-commentary").find(`.${finalZodiac}`);
-
-
-
         //INDUSTRY QUESTION SECTION
         let industryScore;
         
@@ -340,9 +339,25 @@ $(function() {
         zodiacInitialScore = zodiacInitialScore + loveScore;
         console.log(`Your score is now ${zodiacInitialScore}`);
 
-        //OUPUT COMMENTARY AND SCORE
-        $(".zodiac-commentary").append(`<h3>Based on your sign and how you answered the questions, your final score is ${zodiacInitialScore} out of a possible 33 points.</h3>`)
 
+        //Double for loop with if statement to search for the number which matches the zodiac score
+        let conclusion;
+        for(i = 0; i < totalScoreCommentary.length; i = i + 1) {
+            for(j = 0 ; j < totalScoreCommentary[i].points.length; j = j + 1) {
+                if(zodiacInitialScore === totalScoreCommentary[i].points[j]) {
+                    conclusion = totalScoreCommentary[i].conclusion;
+                    // console.log(conclusion);
+                }
+            }
+        }
+
+        //OUPUT COMMENTARY AND SCORE
+        $(".javascript-section").append(`<h3>Based on your answers and our complex algorithm:</h3><p>${conclusion}</p>`)
+
+        //submit button scroll
+       $("html").animate({
+        scrollTop:$(".javascript-section").offset().top
+       });
     })
 });
 

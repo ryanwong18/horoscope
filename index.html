@@ -13,13 +13,29 @@
     <header>
         <div class="wrapper">
             <h1>What do the stars have in store for you?</h1>
+            <a href="#quiz">Find out your Fate</a>
         </div>
     </header>
 
     <main>
+        <section id="quiz">
+            <div class="wrapper">
+                <div class="zodiac-commentary">
+                    <div class="zodiac-image-off aquarius">
+                        <img src="images/horoscope-1.jpg" alt="">
+                    </div>
+                    <div class="zodiac-image-off aries">
+                        <img src="images/horoscope-2.jpg" alt="">
+                    </div>
+                    <div class="zodiac-image-off cancer">
+                        <img src="images/horoscope-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="wrapper">
-                <h2>Find out your fate</h2>
                 <form action="">
                     <div class="basic-info">
                         <div>
@@ -70,91 +86,76 @@
                         </div>
                     </div>
                     <div class="exercise-question">
-                        <label for="">How often do you exercise?</label>
-    
-                        <label for="daily">Everyday</label>
-                        <input type="radio" name="exercise" value="daily" id="daily">
-    
-                        <label for="weekly">Once a week</label>
-                        <input type="radio" name="exercise" value="weekly" id="weekly">
-    
-                        <label for="monthly">Once a month</label>
-                        <input type="radio" name="exercise" value="monthly" id="monthly">
-    
-                        <label for="yearly">Once a year</label>
-                        <input type="radio" name="exercise" value="yearly" id="yearly">
-    
-                        <label for="never">Never seen a gym before</label>
-                        <input type="radio" name="exercise" value="never" id="never">
+                        <div class="exercise-question-and-answer">
+                            <div>
+                                <h3>How often do you exercise?</h3>
+                            </div>
+                            <div>
+                                <input type="radio" name="exercise" value="daily" id="daily">
+                                <label for="daily">Everyday</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="exercise" value="weekly" id="weekly">
+                                <label for="weekly">Once a week</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="exercise" value="monthly" id="monthly">
+                                <label for="monthly">Once a month</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="exercise" value="yearly" id="yearly">
+                                <label for="yearly">Once a year</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="exercise" value="never" id="never">
+                                <label for="never">Never seen a gym before</label>
+                            </div>
+                        </div>
+                        <div class="exercise-image">
+                            <img src="images/exercise.jpg" alt="exercise icon">
+                        </div>
                     </div>
                     <div class="love-question">
-                        <label for="">Which option describes the amount of love in your life?</label>
-                    
-                        <label for="doug">As much as Doug the Pug gets</label>
-                        <input type="radio" name="love" value="doug" id="doug">
-    
-                        <label for="married">Married life - nuff said</label>
-                        <input type="radio" name="love" value="married" id="married">
-    
-                        <label for="parents">As much as my parents give me</label>
-                        <input type="radio" name="love" value="parents" id="parents">
-    
-                        <label for="relationship">Just started a relationship</label>
-                        <input type="radio" name="love" value="relationship" id="relationship">
-    
-                        <label for="single">Single and ready to mingle</label>
-                        <input type="radio" name="love" value="single" id="single">
-    
-                        <label for="alone">Forever alone</label>
-                        <input type="radio" name="love" value="alone" id="alone">
-    
+                        <div class="love-image">
+                            <img src="images/love.jpg" alt="love icon">
+                        </div>
+                        <div class="love-question-and-answer">
+                            <div>
+                                <h3>Which option describes the amount of love in your life?</h3>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="doug" id="doug">
+                                <label for="doug">As much as Dug the Pug gets</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="married" id="married">
+                                <label for="married">Married life</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="parents" id="parents">
+                                <label for="parents">As much as my parents give me</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="relationship" id="relationship">
+                                <label for="relationship">Just started a relationship</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="single" id="single">
+                                <label for="single">Single and ready to mingle</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="love" value="alone" id="alone">
+                                <label for="alone">Forever alone</label>
+                            </div>
+                        </div>    
                     </div>
-    
-                    <input type="submit" value="submit">
+                    <div class="submit-button">
+                        <input type="submit" value="Find your fate">
+                    </div>
+                    <div class="javascript-section">
+                        
+                    </div>
                 </form>
-            </div>
-        </section>
-
-        <section>
-            <div class="wrapper">
-                <div class="zodiac-commentary">
-                    <div class="zodiac-image-off aquarius">
-                        <img src="images/aquarius.jpg" alt="symbol of aquarius zodiac">
-                    </div>
-                    <div class="zodiac-image-off aries">
-                        <img src="images/aries.jpg" alt="symbol of aries zodiac">
-                    </div>
-                    <div class="zodiac-image-off cancer">
-                        <img src="images/cancer.jpg" alt="symbol of cancer zodiac">
-                    </div>
-                    <div class="zodiac-image-off capricon">
-                        <img src="images/capricorn.jpg" alt="symbol of capricorn zodiac">
-                    </div>
-                    <div class="zodiac-image-off gemini">
-                        <img src="images/gemini.jpg" alt="symbol of gemini zodiac">
-                    </div>
-                    <div class="zodiac-image-off leo">
-                        <img src="images/leo.jpg" alt="symbol of leo zodiac">
-                    </div>
-                    <div class="zodiac-image-off libra">
-                        <img src="images/libra.jpg" alt="symbol of libra zodiac">
-                    </div>
-                    <div class="zodiac-image-off pisces">
-                        <img src="images/pisces.jpg" alt="symbol of pisces zodiac">
-                    </div>
-                    <div class="zodiac-image-off sagittarius">
-                        <img src="images/sagittarius.jpg" alt="symbol of sagittarius zodiac">
-                    </div>
-                    <div class="zodiac-image-off scorpio">
-                        <img src="images/scorpio.jpg" alt="symbol of scorpio zodiac">
-                    </div>
-                    <div class="zodiac-image-off taurus">
-                        <img src="images/taurus.jpg" alt="symbol of taurus zodiac">
-                    </div>
-                    <div class="zodiac-image-off virgo">
-                        <img src="images/virgo.jpg" alt="symbol of virgo zodiac">
-                    </div>
-                </div>   
             </div>
         </section>
     </main>
@@ -165,6 +166,7 @@
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

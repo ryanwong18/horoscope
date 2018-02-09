@@ -25,6 +25,20 @@ header {
         display:flex;
         flex-direction:column;
         justify-content: center;
+        align-items: center;
+    }
+    a {
+        padding:15px 30px;
+        text-decoration:none;
+        color:black;
+        background-color:white;
+        text-transform: uppercase;
+        font-size:2rem;
+        letter-spacing:0.3rem;
+        text-align: center;
+        width:300px;
+        margin-top:200px;
+        font-weight:600;
     }
 }
 
@@ -38,7 +52,7 @@ h1 {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -47,7 +61,21 @@ h2 {
     text-transform: uppercase;
     letter-spacing:0.5rem;
     margin-top:0;
+    margin-bottom:100px;
     text-align: center;
+}
+
+.zodiac-commentary {
+    display:flex;
+    margin-bottom:100px;
+    flex-wrap:wrap;
+    justify-content: center;
+    .zodiac-image-off {
+        width:60%;
+    }
+    img {
+        width:100%;
+    }
 }
 
 form {
@@ -67,28 +95,111 @@ form {
     }
     .industry-question {
         display:flex;
-        .industry-image, .question-and-answer {
+        margin-bottom:100px;
+        .industry-image {
             width:50%;
         }
         .question-and-answer {
-            padding-left:50px;
-            label {
-                padding-left:10px;
-            }
+            width:50%;
+            padding-left:50px;  
             div:nth-of-type(n + 2) {
                 padding-bottom:10px;
             }
         }
         img {
-            width:100%;
+            width:90%;
         }
         label {
             font-size:2rem;
+            padding-left:10px;
         }
         h3 {
             font-size:3rem;
             font-weight:600;
             width:100%;
+        }
+    }
+    .exercise-question {
+        display:flex;
+        margin-bottom:100px;
+        img {
+            width:80%;
+            margin-left:50px;
+        }
+        .exercise-image {
+            width:50%;
+        }
+        .exercise-question-and-answer {
+            width:50%;
+            padding-left:50px;
+            div:nth-of-type(n + 2) {
+                padding-bottom:10px;
+            }
+        }
+        label {
+            font-size:2rem;
+            padding-left:10px;
+        }
+        h3 {
+            font-size:3rem;
+            font-weight:600;
+            width:100%;
+        }
+    }
+    .love-question {
+        display:flex;
+        margin-bottom:50px;
+        h3 {
+            font-size:3rem;
+            font-weight:600;
+            width:100%;
+        }
+        img {
+            width:90%;
+        }
+        .love-image {
+            width:50%;
+        }
+        .love-question-and-answer {
+            width:50%;
+            padding-left:50px;
+            div:nth-of-type(n + 2) {
+                padding-bottom:10px;
+            }
+        }
+        label {
+            font-size:2rem;
+            padding-left:10px;
+        }
+    } 
+    .submit-button {
+        display:flex;
+        justify-content: center;
+        input[type="submit"] {
+            font-size:2rem;
+            text-transform: uppercase;
+            font-weight:600;
+            padding:10px 20px;
+            letter-spacing:0.2rem;
+        }
+    }   
+    .javascript-section {
+        margin-top:100px;
+        height:500px;
+        h3 {
+            font-size:3rem;
+            font-weight:500;
+            letter-spacing:0.5px;
+        }
+        span {
+            text-transform: uppercase;
+            color:red;
+            font-size:3.5rem;
+        }
+        p {
+            font-size:2rem;
+            letter-spacing:0.3px;
+            font-weight:500;
         }
     }
 }
