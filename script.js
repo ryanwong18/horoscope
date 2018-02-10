@@ -122,6 +122,8 @@ const zodiac = [
     }
 ];
 
+
+//Arrays for behind the scenes point system
 const industry = [
     {
         name:"arts",
@@ -203,6 +205,8 @@ const love = [
     }
 ];
 
+
+// Based on aggregated points, we assign a conclusion
 const totalScoreCommentary = [
     {
         points: [0, 1, 2, 3, 4 , 5],
