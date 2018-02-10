@@ -27,7 +27,7 @@ const zodiac = [
         month2:"06",
         day2:"21",
         // date:["05-22", "06-21"],
-        description:"According to our trusty source, Wikipedia, Gemini is the third astrological sign in the zodiac. Apparently people of the Gemini sign like to take short trips around town - wait, who doesn't like this?! You are gentle, affectionate, adaptable, quick to learn and a SERIOUS party animal. After a couple of drinks, their dance moves are better than Micheal Jackson doing the moonwalk for the first time. One word: EPIC. You are joined by the supporting cast of Morgan Freeman, Johnny Depp, Angelina Jolie, Tupac, Nicole Kidman, Venus Williams and Natalie Portman. Not a bad entourage you got there *slow clap*.",
+        description:"According to our trusty source, Wikipedia, Gemini is the third astrological sign in the zodiac. Apparently people of the Gemini sign like to take short trips around town - wait, who doesn't like that?! You are gentle, affectionate, adaptable, quick to learn and a SERIOUS party animal. After a couple of drinks, your dance moves are better than Michael Jackson doing the moonwalk for the first time. One word: EPIC. You are joined by a supporting cast of Morgan Freeman, Johnny Depp, Angelina Jolie, Tupac, Nicole Kidman, Venus Williams and Natalie Portman. Not a bad entourage you got there *slow clap*.",
         initialScore:8
     },
     {
@@ -37,7 +37,7 @@ const zodiac = [
         month2:"07",
         day2:"23",
         // date:["06-22","07-23"],
-        description:"According to our trusty source, Wikipedia, Cancer is the fourth astrological sign in the zodiac. They are tenacious, imaginative, emotional and dislike people who diss their mommas. This is 2018, who is still doing that? #Its2018. Their symbol may be the crab, but they have the potential to unleash rage upon anyone, so this is a warning to everyone else. Some individuals who share the same sign are Lionel Messi, Selena Gomez, Ariana Grande, Kevin Hart and Tom Cruise. That's a mixed bag if I've ever seen one.",
+        description:"According to our trusty source, Wikipedia, Cancer is the fourth astrological sign in the zodiac. They are tenacious, imaginative, emotional and dislike people who diss their mommas. This is 2018, who is still doing that? #mommajokesareso2000. Their symbol may be the crab, but they have the potential to unleash rage upon anyone, so this is a warning to everyone else. Some individuals who share the same sign are Lionel Messi, Selena Gomez, Ariana Grande, Kevin Hart and Tom Cruise. That's a mixed bag if I've ever seen one.",
         initialScore:11
     },
     {
@@ -47,7 +47,7 @@ const zodiac = [
         month2:"08",
         day2:"23",
         // date:["07-24", "08-23"],
-        description: "According to our trusty source, Wikipedia, Leo is the sixth astrological sign in the zodiac. People of this sign are passionate, creative, generous, warm-hearted and cheerful. They like to be king of the jungle, similar to Simba, but they sleep like a starfish at night and tend to hog the covers. Good riddance. Individuals of the same sign include Barack Obama, Jennifer Lopez, J.K. Rowling, Whitney Houston, Jennifer Lawrence and Mick Jagger - if that isn't star power, I don't know what is.",
+        description: "According to our trusty source, Wikipedia, Leo is the fifth astrological sign in the zodiac. People of this sign are passionate, creative, generous, warm-hearted and cheerful. They like to be king of the jungle, similar to Simba, but they sleep like a starfish at night and tend to hog the covers. Good riddance. Individuals of the same sign include Barack Obama, Jennifer Lopez, J.K. Rowling, Whitney Houston, Jennifer Lawrence and Mick Jagger - if that isn't star power, I don't know what is.",
         initialScore:10
     },
     {
@@ -67,7 +67,7 @@ const zodiac = [
         month2:"10",
         day2:"23",
         // date:["09-24", "10-23"],
-        description: "According to our trusty source, Wikipedia, Libra is the seventh astrological sign in the zodiac. You are diplomatic, gracious, social and enjoy sleeping 23 out of 24 hours a day. Given some of the people who share the same sign such as Vladimir Putin and Kim Kardashian, maybe it's better to continue the train of zzz's.",
+        description: "According to our trusty source, Wikipedia, Libra is the seventh astrological sign in the zodiac. You are diplomatic, gracious, social and enjoy sleeping 23 out of 24 hours a day. I think you'd give koalas a run for their money. However, given some of the people who share the same sign such as Vladimir Putin and Kim Kardashian, maybe it's better to continue the train of zzz's.",
         initialScore:9
     },
     {
@@ -87,7 +87,7 @@ const zodiac = [
         month2:"12",
         day2:"22",
         // date:["11-23", "12-22"],
-        description: "According to our trusty source, Wikipedia, Sagittarius is the ninth astrological sign in the zodiac. You are like a kid with a great sense of humor and embrace freedom for all it's worth. Like most people, you dislike people who are class 5 clingers and irrelevant details that put you in a rabbit hole to nowhere. Your life revolves around travel and adventure #instagramlife. You are joined by Miley Cyrus, Taylor Swift, Ben Stiller, Britney Spears, Jay-Z, Brad Pitt and Samuel L. Jackson.",
+        description: "According to our trusty source, Wikipedia, Sagittarius is the ninth astrological sign in the zodiac. You are like a kid with a great sense of humor and embrace freedom for all it's worth. Similar to most people, you dislike people who are class 5 clingers and irrelevant details that put you in a rabbit hole to nowhere. Your life revolves around travel and adventure #instagramlife. You are joined by Miley Cyrus, Taylor Swift, Ben Stiller, Britney Spears, Jay-Z, Brad Pitt and Samuel L. Jackson.",
         initialScore:7
     },
     {
@@ -97,7 +97,7 @@ const zodiac = [
         month2:"01",
         day2:"20",
         // date:["12-23", "01-20"],
-        description: "According to our trusty source, Wikipedia, Capricorn is the tenth astrological sign in the zodiac. People of this sign have great self control, discipline and are responsible for their actions. They will only play rockband for 3 hours a day, eat a maximum of 4000 calories and eat maple syrup if it's from Canada, EH! You are joined by the likes of Martin Luther King Jr, Isaac Newton, Benjamin Franklin, Muhammad Ali, Al Capone...wait, why are all these Capricorns deceased?",
+        description: "According to our trusty source, Wikipedia, Capricorn is the tenth astrological sign in the zodiac. People of this sign have great self control, discipline and are responsible for their actions. They will only ride bicycles in the winter, wear flip flops with socks, eat a maximum of 4,000 calories and devour maple syrup if it's from Canada, EH! You are joined by the likes of Martin Luther King Jr, Isaac Newton, Benjamin Franklin, Muhammad Ali, Al Capone...wait, why are all these Capricorns deceased?",
         initialScore:8
     },
     {
@@ -117,7 +117,7 @@ const zodiac = [
         month2:"03",
         day2:"19",
         // date:["02-19", "03-19"],
-        description: "According to our trusty source, Wikipedia, Pisces is the last of twelve astrological signs in the zodiac. You are a compassionate, artistic, intuitive person and have a deep love for exotic fruits, especially durian (How can you stand the smell?!?!). They enjoy meditation and yoga five times a day and eat exactly 200 grains of rice a day. They really dislike being criticized, emotional baggage and cruelty of any kind. Hm, maybe shouldn't prank a Pisces then...You are joined by a star studded group of individuals including Daniel Craig, Rihanna, Justin Bieber, Jessica Biel, Albert Einstein and Adam Levine.",
+        description: "According to our trusty source, Wikipedia, Pisces is the last of twelve astrological signs in the zodiac. You are a compassionate, artistic, intuitive person and have a deep love for exotic fruits, especially durian (How can you stand the smell?!?!). They enjoy meditation and yoga five times a day and eat exactly 200 grains of rice a day. They really dislike being criticized, emotional baggage and cruelty of any kind. Hm, maybe shouldn't have left that whoopee cushion on their chair...oh well *shrug* You are joined by a star studded group of individuals including Daniel Craig, Rihanna, Justin Bieber, Jessica Biel, Albert Einstein and Adam Levine.",
         initialScore:12
     }
 ];
@@ -206,27 +206,27 @@ const love = [
 const totalScoreCommentary = [
     {
         points: [0, 1, 2, 3, 4 , 5],
-        conclusion:"Oh geez, where do we start with you? You are probably far away from where you want to be, but not to worry. We provide consultations and life advice for a price of only $300/month. Please call us at 1-800-MY-STARS or you can reach us at horoscopes@horoscope.com and we'll give you a discount."
+        conclusion:"Oh geez, where do we start with you? You are probably far away from where you want to be in life, but not to worry. We provide consultations and advice for a small sum of only $3,000/month. Please call us at 1-800-MY-STARS or you can reach us at horoscopes@horoscope.com."
     },
     {
         points: [6, 7, 8, 9, 10],
-        conclusion: "Life may be a struggle, but there's nowhere for you to go but up from here. There are aspects of your life that may need improvement, but with some committment, determination and effort, the stars point to better times ahead."
+        conclusion: "You're a pretty cool person, but it appears that you may be struggling a bit in life. More exposure to the big dipper constellation could help you. I would recommend star gazing for about 5 hours a day. Good things could come from this experience which you didn't initially expect. "
     },
     {
         points: [11, 12, 13, 14, 15],
-        conclusion: "You're fairing well, but you may be aspiring to kick it up a notch. The stars are in your favor, but you'll need to take action to reap the benefits. The back half of the year may be tough, but it will pass and you'll learn to endure the hardship."
+        conclusion: "You're fairing well in life, but you may be aspiring to kick it up a notch. I would suggest powering up with regular Red Bull and coffee to give you the extra juice needed to get passed any bumps in your life. It's also not a bad idea to try extreme sports such as skydiving and bungee jumping once in a while to keep the adrenaline rolling."
     },  
     {
         points: [16, 17, 18, 19, 20],
-        conclusion: "Your life is on track and you're probably quite happy with where things are at. You may see no reason to change, but if you're looking to improve your situation, consider additional exercise and maybe some meditation. You're working hard towards your goals, but remember to take care of yourself."
+        conclusion: "You are the most normal person among your friends. That also means you are probably the most boring. To spice up your life, I would recommend taking a massive loan and traveling around the world to gain perspective and experiences. Based on the alignment of star patterns on your birthday, Moldova and Laos could be good options."
     },
     {
         points: [21, 22, 23, 24, 25],
-        conclusion: "You are a high achiever. The stars shine bright for you and will guide the way towards an ascending path. Your health, career and relationships are all on track and you are probably the envy of many others."
+        conclusion: "The stars shine bright for you and will guide the way towards an ascending path in life. In common lingo that basically means, I have no idea what I'm doing and it sounds all mystical and stuff, so hopefully you'll accept it for what it is."
     },
     {
         points: [26, 27, 28, 29, 30, 31, 32, 33],
-        conclusion: "You are a TOTAL boss and you are wasting time on this website. Immediately hit CTRL + W on your windows keyboard or COMMAND + W on your mac to exit this tab - Get out there and do your thing!"
+        conclusion: "You are a TOTAL boss and you are wasting time on this website. Immediately hit CTRL + W on your windows keyboard or COMMAND + W on your mac to exit this tab. Also, stop spending so much time on Twitter, Facebook and Instagram - get out there and be a real human being."
     },
 ]
 

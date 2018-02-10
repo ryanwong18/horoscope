@@ -213,6 +213,12 @@ h2 {
   .zodiac-commentary img {
     width: 100%; }
 
+.love-section, .industry-section {
+  background-color: #e7e7e7; }
+
+label {
+  font-family: 'Roboto', sans-serif; }
+
 form .basic-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,14 +243,19 @@ form .industry-question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 100px; }
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   form .industry-question .industry-image {
-    width: 50%; }
+    width: 55%; }
   form .industry-question .question-and-answer {
     width: 50%;
     padding-left: 50px; }
     form .industry-question .question-and-answer div:nth-of-type(n + 2) {
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
   form .industry-question img {
     width: 90%; }
   form .industry-question label {
@@ -259,17 +270,19 @@ form .exercise-question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 100px; }
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
   form .exercise-question img {
     width: 80%;
     margin-left: 50px; }
   form .exercise-question .exercise-image {
-    width: 50%; }
+    width: 70%; }
   form .exercise-question .exercise-question-and-answer {
     width: 50%;
     padding-left: 50px; }
     form .exercise-question .exercise-question-and-answer div:nth-of-type(n + 2) {
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
   form .exercise-question label {
     font-size: 2rem;
     padding-left: 10px; }
@@ -282,7 +295,9 @@ form .love-question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px; }
+  margin-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
   form .love-question h3 {
     font-size: 3rem;
     font-weight: 600;
@@ -295,7 +310,7 @@ form .love-question {
     width: 50%;
     padding-left: 50px; }
     form .love-question .love-question-and-answer div:nth-of-type(n + 2) {
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
   form .love-question label {
     font-size: 2rem;
     padding-left: 10px; }
@@ -333,7 +348,9 @@ form .submit-button {
   .javascript-section p {
     font-size: 2rem;
     letter-spacing: 0.3px;
-    font-weight: 500; }
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7; }
 
 .reset-button {
   display: -webkit-box;
@@ -342,7 +359,8 @@ form .submit-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  margin-top: 100px; }
   .reset-button a {
     text-decoration: none;
     font-size: 2rem;

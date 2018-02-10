@@ -79,6 +79,14 @@ h2 {
     }
 }
 
+.love-section, .industry-section {
+    background-color:rgb(231, 231, 231);
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
 form {
     .basic-info {
         display:flex;
@@ -98,15 +106,18 @@ form {
     }
     .industry-question {
         display:flex;
-        margin-bottom:100px;
+        margin-bottom:50px;
+        padding-top:50px;
+        padding-bottom:50px;
+        align-items: center;
         .industry-image {
-            width:50%;
+            width:55%;
         }
         .question-and-answer {
             width:50%;
             padding-left:50px;  
             div:nth-of-type(n + 2) {
-                padding-bottom:10px;
+                padding-bottom:20px;
             }
         }
         img {
@@ -124,19 +135,21 @@ form {
     }
     .exercise-question {
         display:flex;
-        margin-bottom:100px;
+        margin-bottom:50px;
+        padding-top:50px;
+        padding-bottom:50px;
         img {
             width:80%;
             margin-left:50px;
         }
         .exercise-image {
-            width:50%;
+            width:70%;
         }
         .exercise-question-and-answer {
             width:50%;
             padding-left:50px;
             div:nth-of-type(n + 2) {
-                padding-bottom:10px;
+                padding-bottom:20px;
             }
         }
         label {
@@ -151,7 +164,9 @@ form {
     }
     .love-question {
         display:flex;
-        margin-bottom:50px;
+        margin-bottom:70px;
+        padding-top:50px;
+        padding-bottom:50px;
         h3 {
             font-size:3rem;
             font-weight:600;
@@ -167,7 +182,7 @@ form {
             width:50%;
             padding-left:50px;
             div:nth-of-type(n + 2) {
-                padding-bottom:10px;
+                padding-bottom:20px;
             }
         }
         label {
@@ -207,13 +222,16 @@ form {
     p {
         font-size:2rem;
         letter-spacing:0.3px;
-        font-weight:500;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        line-height:1.7;
     }
 }
 .reset-button {
     display:flex;
     justify-content: center;
     margin-bottom:100px;
+    margin-top:100px;
     a {
         text-decoration:none;
         font-size:2rem;

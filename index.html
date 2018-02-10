@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Horoscope Generator</title>
-    <link href="https://fonts.googleapis.com/css?family=Khand:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khand:400,500,600,700" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link type="image/png" href="images/favicon.png" rel="icon">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section>
             <div class="wrapper">
                 <form action="">
@@ -50,9 +51,16 @@
                             <input type="date" id="bday" required>
                         </div>
                     </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="industry-section">
+            <div class="wrapper">
+                <form action="">
                     <div class="industry-question">
                         <div class="industry-image">
-                            <img src="images/industry.jpg" alt="icon of industry">
+                            <img src="images/industry.png" alt="icon of industry">
                         </div>
                         <div class="question-and-answer">
                             <div>
@@ -88,6 +96,13 @@
                             </div>
                         </div>
                     </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <form action="">
                     <div class="exercise-question">
                         <div class="exercise-question-and-answer">
                             <div>
@@ -115,12 +130,19 @@
                             </div>
                         </div>
                         <div class="exercise-image">
-                            <img src="images/exercise.jpg" alt="exercise icon">
+                            <img src="images/exercise.png" alt="exercise icon">
                         </div>
                     </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="love-section">
+            <div class="wrapper">
+                <form action="">
                     <div class="love-question">
                         <div class="love-image">
-                            <img src="images/love.jpg" alt="love icon">
+                            <img src="images/love.png" alt="love icon">
                         </div>
                         <div class="love-question-and-answer">
                             <div>
@@ -132,7 +154,7 @@
                             </div>
                             <div>
                                 <input type="radio" name="love" value="married" id="married">
-                                <label for="married">I'm married and my spouse treats me well</label>
+                                <label for="married">I'm married</label>
                             </div>
                             <div>
                                 <input type="radio" name="love" value="parents" id="parents">
@@ -152,6 +174,13 @@
                             </div>
                         </div>    
                     </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <form action="">
                     <div class="submit-button">
                         <input type="submit" value="Find your fate">
                     </div>
@@ -165,11 +194,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-
-
-    </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
