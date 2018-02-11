@@ -240,25 +240,31 @@ let inputBday;
 let finalZodiac;
 let finalDescription;
 let industrySelection;
+let zodiacIndexNum;
+let zodiacInitialScore;
+let industryScore;
+let exerciseScore;
+let loveScore;
+let conclusion;
 
-// On function
+
+// On ready function
 $(function() {
+    //smooth scropping for first button
     $(".wrapper a").smoothScroll({
         speed:800
     });
 
+    //reset button removes all checked radio buttons, scrolls back to the top and clears text in the javascript section
     $(".reset-button a").on("click", function() {
         $("html").animate({scrollTop:0}, "slow");
-
-        //clears the name and birthday inputs
         $("input[type=text]").val("");
         $("input[type=date]").val("");
-
         $("input[type=radio]").prop("checked", false);
-
         $(".javascript-section").empty();
     });
 
+    //On submit function
     $("form").on("submit", function(e) {
         e.preventDefault();
 
@@ -269,8 +275,6 @@ $(function() {
         const inputUpdateBday = inputBday.slice(5);
         const inputUpdateMonth = inputUpdateBday.slice(0,2);
         const inputUpdateDay = inputUpdateBday.slice(3);
-        let zodiacIndexNum;
-        let zodiacInitialScore;
 
         //for loop that finds out zodiac symbol based on birthday
         for(let i = 0; i < zodiac.length ; i = i + 1) {
@@ -279,18 +283,18 @@ $(function() {
                 finalZodiac = zodiac[i].name;
                 finalDescription = zodiac[i].description;
                 zodiacInitialScore = zodiac[i].initialScore;
-                console.log(finalZodiac);
-                console.log(zodiacIndexNum);
-                console.log(zodiacInitialScore);
+                // console.log(finalZodiac);
+                // console.log(zodiacIndexNum);
+                // console.log(zodiacInitialScore);
             }
             else if(inputUpdateMonth === zodiac[i].month2 && (inputUpdateDay <= zodiac[i].day2)) {
                 zodiacIndexNum = zodiac.indexOf(zodiac[i]);
                 finalZodiac = zodiac[i].name;
                 finalDescription = zodiac[i].description;
                 zodiacInitialScore = zodiac[i].initialScore;
-                console.log(finalZodiac);
-                console.log(zodiacIndexNum);
-                console.log(zodiacInitialScore);
+                // console.log(finalZodiac);
+                // console.log(zodiacIndexNum);
+                // console.log(zodiacInitialScore);
             }
         }
         
@@ -299,11 +303,9 @@ $(function() {
     
         
         //INDUSTRY QUESTION SECTION
-        let industryScore;
-        
         //grabs radio input from user
         industrySelection = $(".industry-question input[type=radio]:checked").val();
-        console.log(industrySelection);
+        // console.log(industrySelection);
 
         //for loop to translate user input into score from object
         for(i = 0; i < industry.length ; i = i + 1) {
@@ -314,47 +316,41 @@ $(function() {
 
         //updates initial score
         zodiacInitialScore = zodiacInitialScore + industryScore;
-        console.log(`your new score is ${zodiacInitialScore}`);
-
+        // console.log(`your new score is ${zodiacInitialScore}`);
 
 
         //EXERCISE QUESTION SECTION
-        let exerciseScore;
-
         exerciseSelection = $(".exercise-question input[type=radio]:checked").val();
-        console.log(exerciseSelection);
+        // console.log(exerciseSelection);
 
         for(i = 0; i < exercise.length; i = i + 1) {
             if(exercise[i].name === exerciseSelection) {
                 exerciseScore = exercise[i].points;
             }
         }
-        console.log(exerciseScore);
+        // console.log(exerciseScore);
 
         zodiacInitialScore = zodiacInitialScore + exerciseScore;
-        console.log(`your score is now ${zodiacInitialScore}`);
+        // console.log(`your score is now ${zodiacInitialScore}`);
 
 
 
         //LOVE QUESTION SECTION
-        let loveScore;
-
         loveSelection = $(".love-question input[type=radio]:checked").val();
-        console.log(loveSelection);
+        // console.log(loveSelection);
 
         for(i = 0; i < love.length; i = i + 1) {
             if(love[i].name === loveSelection) {
                 loveScore = love[i].points;
             }
         }
-        console.log(loveScore);
+        // console.log(loveScore);
 
         zodiacInitialScore = zodiacInitialScore + loveScore;
-        console.log(`Your score is now ${zodiacInitialScore}`);
+        // console.log(`Your score is now ${zodiacInitialScore}`);
 
 
         //Double for loop with if statement to search for the number which matches the zodiac score
-        let conclusion;
         for(i = 0; i < totalScoreCommentary.length; i = i + 1) {
             for(j = 0 ; j < totalScoreCommentary[i].points.length; j = j + 1) {
                 if(zodiacInitialScore === totalScoreCommentary[i].points[j]) {
